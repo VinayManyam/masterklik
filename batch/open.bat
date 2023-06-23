@@ -22,7 +22,8 @@ goto :main
 
 :openlink
 set cid=%~1
-start chrome --incognito %cid%
+#start chrome --incognito %cid%
+start %cid%
 timeout 1 > NUL 
 goto :eof
 
